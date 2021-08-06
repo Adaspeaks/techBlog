@@ -1,23 +1,28 @@
 <h2 class="welcome">Welcome back {{username}}!</h2>
 
-{{#each posts as |post| }}
-<div class="container is-centered userPosts">
+{{#each posts as |post|}}
+  <div class="container is-centered userPosts">
     <div class="card blogCards">
-        <div class="card-content">
-            <div class="content">
-                <h4 class="has-text-centered is-size-3" id="title"><a data-id="{{post.id}}">{{post.title}}</a></h4>
-                <p class=" is-size-5" id="postBody">{{post.post_body}}</p>
-                <p class="has-text-right">Date posted: {{format_date post.date_posted}}</p>
-            </div>
+      <div class="card-content">
+        <div class="content">
+          <h4 class="has-text-centered is-size-3" id="title"><a
+              data-id="{{post.id}}"
+            >{{post.title}}</a></h4>
+          <p class="is-size-5" id="postBody">{{post.post_body}}</p>
+          <p class="has-text-right">Date posted:
+            {{format_date post.date_posted}}</p>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 {{/each}}
 
 <div class="columns is-centered">
-    <div class = "control">
-        <button class ="button is-success is-medium" id="newpost"> + New Post </button>
-    </div>
+  <div class="control">
+    <button class="button is-success is-medium" id="newpost">
+      + New Post
+    </button>
+  </div>
 </div>
 
 <script src="/js/dashboard.js"></script>
