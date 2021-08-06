@@ -1,0 +1,81 @@
+html, body {
+    height:100%;
+    background-color: rgb(146, 146, 146);
+    scroll-behavior: smooth;
+}
+
+.homepageBody {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.commentPost, .makeComment {
+    width: 70%;
+}
+
+.commentPost .media-content, .content .title{
+    background-color:rgb(42, 72, 117);
+    padding: 10px;
+}
+
+.commentPost .title, 
+.commentPost .subtitle, 
+.content .title a {
+    color: white;
+}
+
+.commentPost .subtitle {
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+
+.commentDiv {
+    border-top: 2px black solid;
+    padding: 20px;
+}
+
+.commentDiv h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.userPostDashboard, .commentUser {
+    text-align: right;
+}
+
+.userPosts {
+    width: 60%;
+}
+
+.blogCards {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blogCards h4 {
+    background-color:rgb(35, 48, 68);
+    padding: 5px;
+}
+
+.blogCards a {
+    color: white;
+}
+
+#newpost {
+    margin-top: 2rem;
+}
+
+.welcome {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.reveal {
+    display: block;
+}
